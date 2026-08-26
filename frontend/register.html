@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AgroLink - Create Account</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="register-body">
+
+
+<div class="register-container">
+
+
+    <div class="register-header">
+
+        <a href="index.html" class="logo">
+            🌱 Agro<span>Link</span>
+        </a>
+
+        <h1>Create Your Account</h1>
+
+        <p>
+            Join the AgroLink agricultural community
+        </p>
+
+    </div>
+
+
+    <!-- ROLE CARDS -->
+
+    <div class="role-cards">
+
+
+        <div
+            class="role-card"
+            data-role="farmer">
+
+            <div class="role-icon">
+                👨‍🌾
+            </div>
+
+            <h3>Farmer</h3>
+
+            <p>
+                Sell your produce and access
+                smart farming tools.
+            </p>
+
+        </div>
+
+
+        <div
+            class="role-card"
+            data-role="consumer">
+
+            <div class="role-icon">
+                🛒
+            </div>
+
+            <h3>Consumer</h3>
+
+            <p>
+                Discover and buy fresh
+                agricultural products.
+            </p>
+
+        </div>
+
+
+        <div
+            class="role-card"
+            data-role="retailer">
+
+            <div class="role-icon">
+                🏪
+            </div>
+
+            <h3>Retailer</h3>
+
+            <p>
+                Source agricultural products
+                directly from farmers.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- REGISTER FORM -->
+
+    <div class="register-form-box">
+
+        <h2 id="registerTitle">
+            Select Your Account Type
+        </h2>
+
+        <p>
+            Choose a role above to continue.
+        </p>
+
+
+        <form id="registerForm">
+
+            <input
+                type="hidden"
+                id="registerRole">
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create password"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="registerPhone"
+                        placeholder="Enter phone number"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="auth-btn"
+                id="registerButton"
+                disabled>
+
+                Create Account
+
+            </button>
+
+        </form>
+
+
+        <p class="login-link">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

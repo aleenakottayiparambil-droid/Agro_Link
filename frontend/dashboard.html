@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AgroLink Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="dashboard-body">
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+
+    <div class="sidebar-logo">
+
+        🌱 Agro<span>Link</span>
+
+    </div>
+
+
+    <div class="user-profile">
+
+        <div class="profile-circle">
+            👤
+        </div>
+
+        <div>
+
+            <h3 id="userName">
+                User
+            </h3>
+
+            <span id="userRole">
+                User
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav class="dashboard-nav" id="dashboardNav">
+
+        <!-- JavaScript adds menu items -->
+
+    </nav>
+
+
+    <button
+        class="logout-btn"
+        onclick="logout()">
+
+        🚪 Logout
+
+    </button>
+
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="dashboard-main">
+
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-welcome">
+                Welcome back,
+            </p>
+
+            <h1 id="dashboardTitle">
+                AgroLink Dashboard
+            </h1>
+
+        </div>
+
+
+        <div class="dashboard-user">
+
+            <div class="notification">
+                🔔
+            </div>
+
+            <div class="small-profile">
+                👤
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= FARMER DASHBOARD ================= -->
+
+    <section
+        id="farmerDashboard"
+        class="dashboard-section">
+
+
+        <div class="dashboard-banner">
+
+            <div>
+
+                <span>
+                    FARMER PORTAL
+                </span>
+
+                <h2>
+                    Grow Smarter.
+                    <br>
+                    Sell Better.
+                </h2>
+
+                <p>
+                    Access smart agricultural tools
+                    and reach more customers.
+                </p>
+
+            </div>
+
+            <div class="banner-icon">
+                🌾
+            </div>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <div
+                class="feature-card"
+                onclick="openFeature('Sell Produce')">
+
+                <div class="feature-icon">
+                    🥬
+                </div>
+
+                <h3>
+                    Sell Produce
+                </h3>
+
+                <p>
+                    List your crops and sell them
+                    directly to consumers and retailers.
+                </p>
+
+                <span class="feature-link">
+                    Sell Now →
+                </span>
+
+            </div>
+
+
+            <div
+                class="feature-card"
+                onclick="openFeature('Government Schemes')">
+
+                <div class="feature-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Government Schemes
+                </h3>
+
+                <p>
+                    Explore agricultural schemes,
+                    subsidies and farmer benefits.
+                </p>
+
+                <span class="feature-link">
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <div
+                class="feature-card"
+                onclick="window.location.href='disease.html'">
+
+                <div class="feature-icon">
+                    🔬
+                </div>
+
+                <h3>
+                    Crop Disease Detection
+                </h3>
+
+                <p>
+                    Upload a crop image and identify
+                    possible diseases using AI.
+                </p>
+
+                <span class="feature-link">
+                    Detect Disease →
+                </span>
+
+            </div>
+
+
+            <div
+                class="feature-card"
+                onclick="openFeature('Weather')">
+
+                <div class="feature-icon">
+                    ☀️
+                </div>
+
+                <h3>
+                    Weather
+                </h3>
+
+                <p>
+                    Get weather information and
+                    farming-related weather alerts.
+                </p>
+
+                <span class="feature-link">
+                    Check Weather →
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="quick-section">
+
+            <h2>
+                Quick Overview
+            </h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>🌾</span>
+                    <div>
+                        <h3>12</h3>
+                        <p>Products Listed</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <span>📦</span>
+                    <div>
+                        <h3>28</h3>
+                        <p>Orders Received</p>
+                    </div>
+                </div>
+
+
+                <div class="stat-card">
+                    <span>💰</span>
+                    <div>
+                        <h3>₹24,500</h3>
+                        <p>Total Sales</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONSUMER / RETAILER ================= -->
+
+    <section
+        id="buyerDashboard"
+        class="dashboard-section">
+
+
+        <div class="dashboard-banner">
+
+            <div>
+
+                <span id="buyerType">
+                    MARKETPLACE
+                </span>
+
+                <h2>
+                    Fresh Produce.
+                    <br>
+                    Direct From Farmers.
+                </h2>
+
+                <p>
+                    Discover quality agricultural products
+                    through AgroLink.
+                </p>
+
+            </div>
+
+            <div class="banner-icon">
+                🛒
+            </div>
+
+        </div>
+
+
+        <div class="buyer-card">
+
+            <div class="buyer-icon">
+                🥕
+            </div>
+
+            <div>
+
+                <h2>
+                    Buy Produce
+                </h2>
+
+                <p>
+                    Browse fresh fruits, vegetables,
+                    grains and other agricultural products
+                    available from farmers.
+                </p>
+
+                <button
+                    class="primary-dashboard-btn"
+                    onclick="openFeature('Buy Produce')">
+
+                    Browse Produce →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-preview">
+
+            <h2>
+                Popular Produce
+            </h2>
+
+
+            <div class="products">
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        🥬
+                    </div>
+
+                    <h3>
+                        Fresh Vegetables
+                    </h3>
+
+                    <p>
+                        Direct from farmers
+                    </p>
+
+                    <strong>
+                        ₹80/kg
+                    </strong>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        🍅
+                    </div>
+
+                    <h3>
+                        Fresh Tomatoes
+                    </h3>
+
+                    <p>
+                        Farm fresh
+                    </p>
+
+                    <strong>
+                        ₹60/kg
+                    </strong>
+
+                </div>
+
+
+                <div class="product-card">
+
+                    <div class="product-image">
+                        🌾
+                    </div>
+
+                    <h3>
+                        Organic Grains
+                    </h3>
+
+                    <p>
+                        Quality agricultural produce
+                    </p>
+
+                    <strong>
+                        ₹120/kg
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

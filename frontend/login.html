@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgroLink - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="auth-body">
+
+
+<!-- ================= LEFT SIDE ================= -->
+
+<div class="auth-left">
+
+    <div class="auth-overlay"></div>
+
+    <div class="auth-left-content">
+
+        <div class="logo auth-logo">
+            🌱 Agro<span>Link</span>
+        </div>
+
+        <h1>
+            Welcome Back
+        </h1>
+
+        <p>
+            Connect with the agricultural community
+            and grow together with AgroLink.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= LOGIN FORM ================= -->
+
+<div class="auth-right">
+
+    <div class="auth-box">
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+        <h2>Login</h2>
+
+        <p class="auth-subtitle">
+            Login to your AgroLink account
+        </p>
+
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+
+            <div class="role-select">
+
+                <label>Login As</label>
+
+                <select id="loginRole" required>
+
+                    <option value="">Select Role</option>
+
+                    <option value="farmer">
+                        Farmer
+                    </option>
+
+                    <option value="consumer">
+                        Consumer
+                    </option>
+
+                    <option value="retailer">
+                        Retailer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit" class="auth-btn">
+                Login
+            </button>
+
+        </form>
+
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+
+        <p class="create-account">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Create Account
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

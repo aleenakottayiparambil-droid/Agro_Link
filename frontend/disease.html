@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AgroLink - Crop Disease Detection</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="disease-page">
+
+
+<header class="simple-header">
+
+    <a href="dashboard.html"
+       class="logo">
+
+        🌱 Agro<span>Link</span>
+
+    </a>
+
+    <a href="dashboard.html"
+       class="back-dashboard">
+
+        ← Dashboard
+
+    </a>
+
+</header>
+
+
+<main class="disease-container">
+
+
+    <div class="disease-heading">
+
+        <span>AI AGRICULTURAL ASSISTANT</span>
+
+        <h1>
+            Crop Disease Detection
+        </h1>
+
+        <p>
+            Upload an image of your crop or plant
+            and let AI identify possible diseases.
+        </p>
+
+    </div>
+
+
+    <div class="disease-card">
+
+
+        <form id="diseaseForm">
+
+
+            <div class="upload-area"
+                 id="uploadArea">
+
+                <div class="upload-icon">
+                    🌿
+                </div>
+
+                <h3>
+                    Upload Crop Image
+                </h3>
+
+                <p>
+                    JPG, JPEG or PNG
+                </p>
+
+                <input
+                    type="file"
+                    id="cropImage"
+                    accept="image/*"
+                    required>
+
+                <label for="cropImage"
+                       class="upload-button">
+
+                    Choose Image
+
+                </label>
+
+            </div>
+
+
+            <div
+                id="imagePreview"
+                class="image-preview">
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="detect-button">
+
+                🔬 Detect Disease
+
+            </button>
+
+
+        </form>
+
+
+        <div
+            id="loading"
+            class="disease-loading">
+
+            <div class="loader"></div>
+
+            <p>
+                Analyzing your crop image...
+            </p>
+
+        </div>
+
+
+        <div
+            id="result"
+            class="disease-result">
+
+            <h2>
+                Detection Result
+            </h2>
+
+            <div class="result-box">
+
+                <p class="result-label">
+                    Detected Disease
+                </p>
+
+                <h3 id="diseaseName">
+                    -
+                </h3>
+
+                <p class="result-label">
+                    Confidence
+                </p>
+
+                <div class="confidence-bar">
+
+                    <div
+                        id="confidenceFill">
+                    </div>
+
+                </div>
+
+                <strong id="confidence">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <h3>
+                    🌱 Recommendation
+                </h3>
+
+                <p id="recommendationText">
+                    -
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="js/disease.js"></script>
+
+</body>
+
+</html>
